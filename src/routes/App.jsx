@@ -1,9 +1,9 @@
 import React from 'react';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
-import Carrito from '../containers/Carrito';
-import Home from '../containers/Home';
-import Product from '../containers/Product';
-import Search from '../containers/Search';
+import Carrito from '../containers/Carrito/Carrito';
+import Home from '../containers/Home/Home';
+import Product from '../containers/Product/Product';
+import Search from '../containers/Search/Search';
 import NotFound from '../containers/NotFound';
 
 const App = () => {
