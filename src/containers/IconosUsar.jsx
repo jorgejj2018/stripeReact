@@ -3,6 +3,13 @@ import React from 'react';
 import { MdShoppingCart, MdSearch, MdRemoveCircleOutline, MdChevronLeft, MdControlPoint } from 'react-icons/md';
 
 const IconosUsar = () => {
+  const getCharacters = async () => {
+    const url = 'https://rickandmortyapi.com/api/character/';
+    const response = await fetch(url);
+    const data = await response.json();
+    console.log(data.results);
+  };
+  getCharacters();
   return (
     <div>
       <div>
