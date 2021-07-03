@@ -7,7 +7,7 @@ const IconosUsar = () => {
     const url = 'https://rickandmortyapi.com/api/character/';
     const response = await fetch(url);
     const data = await response.json();
-    console.log(data.results);
+   // console.log(data.results);
   };
   getCharacters();
   return (

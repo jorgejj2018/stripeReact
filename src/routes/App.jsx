@@ -5,9 +5,11 @@ import Home from '../containers/Home/Home';
 import Product from '../containers/Product/Product';
 import Search from '../containers/Search/Search';
 import NotFound from '../containers/NotFound';
+import Peticion from '../stripe/Stripe'
 
 const App = () => {
   return (
+    <>
     <BrowserRouter>
       <Switch>
         <Route exact path='/' component={Home} />
@@ -17,6 +19,8 @@ const App = () => {
         <Route component={NotFound} />
       </Switch>
     </BrowserRouter>
+    <Peticion></Peticion>
+    </>
   );
 };
 export default App;
